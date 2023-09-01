@@ -5,13 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.util.Log;
+import android.util.Pair;
 import android.view.ContextMenu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.io.IOException;
+import java.util.Locale;
+
+import kotlin.reflect.KClassifier;
 
 public class MainActivity extends AppCompatActivity {
-    private View textView;
+    private TextView textView;
+    Classifier cls;
+
     View.OnTouchListener listener = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -19,9 +29,12 @@ public class MainActivity extends AppCompatActivity {
             BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
             Bitmap bitmap = drawable.getBitmap();
             
-            // 여기서 텐서플로 라이트 분류
-            
+            // 여기서 텐서플로라이트 분류
+            Pair<Integer,Float> res = cls.classify(bitmap);
+            String outStr = String.format(Locale.ENGLISH,"%d, %.0f%%", res.first, res.second * 100.0f);
             // 예측 결과 출력
+            textView.setText(outStr);
+
             return false;
         }
     };
@@ -35,5 +48,18 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView2 = findViewById(R.id.imageView2);
         imageView1.setOnTouchListener(listener);
         imageView2.setOnTouchListener(listener);
+
+        cls = new Classifier(this); //  자신의 화면에 실행
+        try {
+            cls.init();
+        }catch (IOException ioe){
+            Log.d("DigitClassifier","failed to init Classifier",ioe);
+        }
     }
+    @Override
+    protected void onDestroy(){
+        cls.finsh();
+        super.onDestroy();
+    }
+
 }
