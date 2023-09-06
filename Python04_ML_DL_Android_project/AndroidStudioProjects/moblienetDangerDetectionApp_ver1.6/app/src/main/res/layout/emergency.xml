@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="긴급전화"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/emergencybutton1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#79698DD4"
+        android:drawableBottom="@drawable/police_resize"
+        android:text="112 전화 연결" />
+
+    <Button
+        android:id="@+id/emergencybutton2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#6FFA5968"
+        android:drawableBottom="@drawable/firefighter_resize"
+        android:text="119 전화 연결" />
+
+    <Button
+        android:id="@+id/emergencybutton3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#006CDB2D"
+        android:drawableBottom="@drawable/phonecell_resize"
+        android:text="다이얼로 이동" />
+
+
+
+</LinearLayout>
