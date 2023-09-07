@@ -36,8 +36,8 @@
 2. 119 : 119로 곧바로 전화연결
 3. 다이얼 : 기본 전화 앱으로 연결되어 직접 다이얼을 입력함
 
-## 서비스 구조
-![서비스구조](https://user-images.githubusercontent.com/77563814/134013439-f36295cc-39c0-41e7-86b6-19e6a02183c6.jpg)
+## 구조도
+
 
 
 ## 기술 스택
@@ -52,18 +52,6 @@
 
 - 2021.7.27 ~ 8.31  (5주)
     
-
-## 기획 & 설계
-
-[기능 명세서](https://www.notion.so/4241cfb8aab64592af099f34b2ccb938)
-
-[페이지 기획서](https://whimsical.com/8-MbpuashuB5aRgSKR6jM14A) → ✨[디자인](https://www.figma.com/file/1FrTtdMDvn53kDvS93GHBL/%EC%B9%B4%ED%8E%98?node-id=0%3A1)
-
-[API 명세서](https://www.notion.so/API-0b0cbd9ff7eb46d4b4b21446bf20233d)
-
-[API 문서](https://www.notion.so/API-f730b73b41b249a8a394cbbc4dc18213)
-
-[DB 명세서](https://www.notion.so/DB-45d7f01cbc334d40968bd39d2dfe84ad)
 
 ## 기본 베이스 참고 자료 : [https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/android]
 
