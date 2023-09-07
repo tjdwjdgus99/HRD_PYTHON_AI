@@ -37,15 +37,14 @@
 3. 다이얼 : 기본 전화 앱으로 연결되어 직접 다이얼을 입력함
 
 ## 구조도
+![image](https://github.com/tjdwjdgus99/HRD_PYTHON_AI/assets/78959224/d4656ee5-a47d-4b86-a56e-d874d2511381)
 
-
+## UML
+![image](https://github.com/tjdwjdgus99/HRD_PYTHON_AI/assets/78959224/874bc65f-6622-4044-9dfd-501b62bb017e)
 
 ## 기술 스택
-
-- Front
-    - Javascript, React, Ant design, Styled-components
-- Back
-    - Java - version 11, SpringBoot, Spring Data JPA, Gradle, Junit4, MySQL, AWS(EC2, RDS)
+- JAVA(Android Studio)
+- Python(Jupyther notebook)
 
 
 ## 개발 기간
