@@ -52,5 +52,5 @@
 - 2021.7.27 ~ 8.31  (5주)
     
 
-## 기본 베이스 참고 자료 : [https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/android]
+## 기본 베이스 : [https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/android]
 
