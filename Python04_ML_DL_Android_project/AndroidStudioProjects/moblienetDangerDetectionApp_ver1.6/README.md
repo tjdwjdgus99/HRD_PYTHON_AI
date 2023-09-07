@@ -9,6 +9,7 @@
 
 ## 영상 : [https://www.youtube.com/watch?v=tnDuCUsiYcI]
 
+## 기본 베이스 참고 자료 : [https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/android]
 
 
 
