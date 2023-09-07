@@ -54,4 +54,3 @@
 
 ## 기본 베이스 참고 자료 : [https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/android]
 
-![DB](https://user-images.githubusercontent.com/77563814/133954614-b1a28410-baac-4f6b-a1e0-3c35b5d5d93b.png)
