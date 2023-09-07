@@ -7,7 +7,7 @@
 💯 Solution : 영상, 이미치 머신러닝을 통해서 카메라, 사진를 통해 칼을 감지해보자!!
 
 
-## 영상 : [http://cafemate.shop](https://www.youtube.com/watch?v=tnDuCUsiYcI)
+## 영상 : [https://www.youtube.com/watch?v=tnDuCUsiYcI]
 
 
 
