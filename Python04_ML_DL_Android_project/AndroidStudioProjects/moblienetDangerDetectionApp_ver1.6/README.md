@@ -49,7 +49,7 @@
 
 ## 개발 기간
 
-- 2021.7.27 ~ 8.31  (5주)
+- 2023.9.01 ~ 9.08  (1주)
     
 
 ## 기본 베이스 : [https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/android]
