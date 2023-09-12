@@ -58,33 +58,37 @@ public class RobotView extends View implements Runnable{
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
             case MotionEvent.ACTION_MOVE:
-                if(count == 1){
-                    count = 0;
-                }
-                if(count == 0){
-                    count = 1;
-                }
-                this.invalidate();  // Refresh the view
+                count = (count == 0) ? 1 : 0; // 0과 1을 번갈아가며 변경
+                this.invalidate();  // 뷰를 새로 고칩니다.
                 break;
         }
         return true;
     }
+
 
     @Override
     public void run(){
         for(;;){
             try {
                 Thread.sleep(50);
-                if (count ==0){
+                if (x==viewWidth/2 - imageWidth/2 && y == 0){   //  시작
                     goright();
+                } else if (count == 0 && x == viewWidth - imageWidth && y < viewHeight/2) { //  오 위
                     godown();
+                } else if (count == 0 && y == viewHeight - imageHeight && x > viewWidth/2) {   //  오 아래
                     goleft();
+                } else if (count == 0 && x == 0  && y > viewHeight/2) {  //  왼 아래
                     goup();
-                }else{
-                    goleft();
-                    godown();
+                } else if (count == 0 && y == 0 && x < viewWidth/2) {  //  왼 위
                     goright();
+                } else if (count == 1 && x == viewWidth - imageWidth && y < viewHeight/2) { //  오 위
+                    goleft();
+                } else if (count == 1 && y == viewHeight - imageHeight && x > viewWidth/2) {   //  오 아래
                     goup();
+                } else if (count == 1 && x == 0  && y > viewHeight/2) {  //  왼 아래
+                    goright();
+                } else if (count == 1 && y == 0 && y < viewHeight/2) {  //  왼 위
+                    godown();
                 }
 
 
