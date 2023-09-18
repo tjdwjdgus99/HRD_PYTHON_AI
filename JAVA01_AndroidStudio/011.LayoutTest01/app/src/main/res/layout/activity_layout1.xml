@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48FF0000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="성별선택"
+        android:textSize="34dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/rdoBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_1" />
+
+        <RadioButton
+            android:id="@+id/rdoBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_2"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rdoBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_3" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9703A9F4"
+            android:text="Button" />
+
+    </RadioGroup>
+</LinearLayout>
