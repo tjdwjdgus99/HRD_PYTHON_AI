@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ListViewTest</string>
+    <string-array name = "subway">
+        <item>판암</item>
+        <item>신흥</item>
+        <item>대동</item>
+        <item>대전역</item>
+        <item>갈마</item>
+        <item>정부청사</item>
+        <item>시청</item>
+        <item>탄방</item>
+        <item>용문</item>
+        <item>오룡</item>
+        <item>서대전네거리</item>
+        <item>중구청</item>
+
+
+    </string-array>
+</resources>
